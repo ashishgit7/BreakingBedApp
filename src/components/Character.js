@@ -8,7 +8,7 @@ const Character = ({items}) => {
                         <thead>
                             <tr>
                             <th scope="col" className="text-danger">Name</th>
-                            <th scope="col" className="text-success">Occupation</th>
+                            <th scope="col" className="text-primary">Occupation</th>
                             <th scope="col" className="text-info">DOB</th>
                             <th scope="col" className="text-warning">Status</th>
                             </tr>
@@ -17,10 +17,10 @@ const Character = ({items}) => {
                     
                         <tbody key = {item.char_id}>
                             <tr>
-                           <Link to={`/char/${item.char_id}`}> <th>{item.name}</th></Link>
-                            <td>{item.occupation[0]}</td>
-                            <td>{item.birthday}</td>
-                            <td>{item.status}</td>
+                           <Link to={`/char/${item.char_id}`}> <th className ="text-dark">{item.name}</th></Link>
+                            <td className="font-weight-bold" style={{color:"navy"}}>{item.occupation[0]}</td>
+                            <td className="font-weight-bold" style={{color:"navy"}}>{item.birthday}</td>
+                            <td className="font-weight-bold" style={{color:"navy"}}>{item.status}</td>
                             </tr>
                             
                         </tbody>

@@ -6,7 +6,6 @@ const CharaterShow = ({ match, location }) => {
     const [isloading, setIsloading] = useState(true)
     useEffect(() => {
        const path = location.pathname.slice(5)
-       console.log(path)
         const fetchData = async () => {
             const val = await axios(
                 `https://www.breakingbadapi.com/api/characters${path}`
@@ -37,7 +36,7 @@ const CharaterShow = ({ match, location }) => {
                     </div>
                     <div className="col-5">
                         <div className="card-body">
-                            <h5 className="card-title">{res[0].name}</h5>
+                            <h3 className="card-title text-danger font-weight-bold">{res[0].name}</h3>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li className="list-group-item text-success">Date of Birth: <span className="text-primary">{res[0].birthday}</span></li>

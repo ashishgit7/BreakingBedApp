@@ -14,7 +14,6 @@ const Home = () => {
       const res = await axios (
         `https://www.breakingbadapi.com/api/characters?name=${query}`
       )
-      console.log(res.data)
       setItems(res.data)
     } 
     fetchData()
