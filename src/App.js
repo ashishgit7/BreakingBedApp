@@ -3,7 +3,7 @@ import Home from './components/Home'
 import CharaterShow from './components/CharaterShow'
 import StartPage from './components/StartPage'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-process.env.CI = true
+process.env.CI = false
 const App = () => {
 
   return (
